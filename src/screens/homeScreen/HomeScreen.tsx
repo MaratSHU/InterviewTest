@@ -18,7 +18,7 @@ export const HomeScreen = ({navigation}: IProps) => {
   const dispatch = useAppDispatch();
   const lastUpdate = useRef(new Date());
   const timerRef = useRef(null);
-  const isFocused = useIsFocused();
+  const isFocused: boolean = useIsFocused();
 
   const resetTimer = useCallback(
     startNew => {
